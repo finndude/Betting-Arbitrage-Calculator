@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arbitrage Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Betting Arbitrage Calculator</h1>
+    
+    <!-- Toggle for 2-way or 3-way betting -->
+    <div class="input-group">
+      <label for="threeWayToggle">Enable 3-Way Market:</label>
+      <input type="checkbox" id="threeWayToggle" />
+    </div>
+
+    <!-- Odds for Outcome A -->
+    <div class="input-group">
+      <label for="oddsA">Odds for Outcome A:</label>
+      <input type="number" id="oddsA" step="0.01" />
+    </div>
+
+    <!-- Odds for Outcome B -->
+    <div class="input-group">
+      <label for="oddsB">Odds for Outcome B:</label>
+      <input type="number" id="oddsB" step="0.01" />
+    </div>
+
+    <!-- Odds for Outcome C (appears only if 3-way toggle is enabled) -->
+    <div class="input-group" id="oddsCGroup" style="display: none;">
+      <label for="oddsC">Odds for Outcome C:</label>
+      <input type="number" id="oddsC" step="0.01" />
+    </div>
+
+    <!-- Total Stake -->
+    <div class="input-group">
+      <label for="stake">Total Stake:</label>
+      <input type="number" id="stake" step="1" value="100" />
+    </div>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
