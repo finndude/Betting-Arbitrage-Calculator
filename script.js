@@ -26,11 +26,11 @@ function calculate() {
   
         resultsDiv.innerHTML = `
           <p style="color: green;"><strong>Arbitrage opportunity found!</strong></p>
-          <p>Stake on Outcome A: $${stakeA.toFixed(2)}</p>
-          <p>Stake on Outcome B: $${stakeB.toFixed(2)}</p>
-          <p>Total Stake: $${stake.toFixed(2)}</p>
-          <p>Guaranteed Payout: $${payout.toFixed(2)}</p>
-          <p><strong>Guaranteed Profit: $${profit.toFixed(2)}</strong></p>
+          <p>Stake on Outcome A: £${stakeA.toFixed(2)}</p>
+          <p>Stake on Outcome B: £${stakeB.toFixed(2)}</p>
+          <p>Total Stake: £${stake.toFixed(2)}</p>
+          <p>Guaranteed Payout: £${payout.toFixed(2)}</p>
+          <p><strong>Guaranteed Profit: £${profit.toFixed(2)}</strong></p>
         `;
       } else {
         resultsDiv.innerHTML = `
@@ -62,12 +62,12 @@ function calculate() {
   
         resultsDiv.innerHTML = `
           <p style="color: green;"><strong>Arbitrage opportunity found!</strong></p>
-          <p>Stake on Outcome A: $${stakeA.toFixed(2)}</p>
-          <p>Stake on Outcome B: $${stakeB.toFixed(2)}</p>
-          <p>Stake on Outcome C: $${stakeC.toFixed(2)}</p>
-          <p>Total Stake: $${stake.toFixed(2)}</p>
-          <p>Guaranteed Payout: $${payout.toFixed(2)}</p>
-          <p><strong>Guaranteed Profit: $${profit.toFixed(2)}</strong></p>
+          <p>Stake on Outcome A: £${stakeA.toFixed(2)}</p>
+          <p>Stake on Outcome B: £${stakeB.toFixed(2)}</p>
+          <p>Stake on Outcome C: £${stakeC.toFixed(2)}</p>
+          <p>Total Stake: £${stake.toFixed(2)}</p>
+          <p>Guaranteed Payout: £${payout.toFixed(2)}</p>
+          <p><strong>Guaranteed Profit: £${profit.toFixed(2)}</strong></p>
         `;
       } else {
         resultsDiv.innerHTML = `
